@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>FormTable</title>
+    <script type="module" crossorigin src="/Design_FormDesign/assets/admin-69dd3acf.js"></script>
+    <link rel="stylesheet" href="/Design_FormDesign/assets/admin-bf279a84.css">
+  </head>
+  <body>
+    <div class="d-flex">
+
+      <aside class="d-flex flex-column justify-content-between ">
+    <ul class="asidemenu">
+        <li class="box d-flex mt-40 mb-32">
+            <img  src="/Design_FormDesign/assets/logo-ANSWER-5336fb45.svg" alt="LOGO">
+        </li>
+
+        <li class="box d-flex mb-26 ">
+            <a href="#" class="text-gray-900">
+                <span class="material-icons me-16 align-middle">
+                    insert_chart
+                </span>
+                <h3 class="fs-6 fw-bold d-inline">Dashboard</h3>
+            </a>
+        </li>
+
+        <li class="box d-flex mb-26 ">
+            <a href="#" class="text-gray-900">
+                <span class="material-icons me-16 align-middle">
+                    question_answer
+                </span>
+                <h3 class="fs-6 fw-bold d-inline">Question</h3>
+            </a>
+        </li>
+
+        <li class="box d-flex mb-26">
+            <a href="#" class="text-gray-900">
+                <span class="material-icons me-16 align-middle">
+                    assignment
+                </span>
+                <h3 class="fs-6 fw-bold d-inline">Assignment</h3>
+            </a>
+        </li>
+
+        <li class="box d-flex mb-26">
+            <a href="#" class="text-gray-900">
+                <span class="material-icons me-16 align-middle">
+                    video_library
+                </span>
+                <h3 class="fs-6 fw-bold d-inline">Course</h3>
+            </a>
+        </li>
+
+        <li class="box d-flex mb-26 mx-30">
+            <a class=" text-success border-start border-4 border-successfuly border-success ps-4" href="./admin.html">
+                <span class="material-icons me-16 align-middle">
+                    group
+                </span>
+                <h3 class="fs-6 fw-bold d-inline ">Admin</h3>
+            </a>
+        </li>
+
+        <li class="box d-flex mb-26 ">
+            <a href="#" class="text-gray-900">
+                <span class="material-icons me-16 align-middle">
+                    settings
+                </span>
+                <h3 class="fs-6 fw-bold d-inline">Settings</h3>
+            </a>
+        </li>
+    </ul>
+
+    <div class="d-flex">
+        <div class="header me-16 ms-32 ">
+        </div>
+        <div class="infro">
+            <h3 class="fw-bold mb-1">Andy Chen</h3>
+            <p class="fc-g">andy0401@mail.com</p>
+        </div>
+    </div>
+    
+</aside>
+      <div>
+        <nav class="d-flex justify-content-between mt-40">
+          <div class="d-flex">
+            <h2 class="fw-bold fz-24 me-48 ms-32">Admin</h2>
+            <button type="button" class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#open">
+              <span class="material-icons me-8 text-success align-middle">
+                add
+              </span>
+              <p class="fw-bold d-inline poin text-gray-900 align-middle">Add New Admin</p>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="open" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content p-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="Add">New Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <h3 calss="fw-bold">Account</h3>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="fc-g fz-14">Name</label>
+                        <input type="text" class="form-control mb-2" id="recipient-name">
+                        <label for="recipient-name" class="fc-g fz-14">Email</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <hr class="mt-4 mb-4">
+                      <h3 calss="fw-bold">Verification</h3>
+                      <span class="material-icons text-danger align-middle">
+                        warning
+                      </span>
+                      <span>Unverified</span>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary mt-3 text-success fs-6" type="button">Send Verification Mail</button>
+                      </div>
+                      <hr class="mt-4 mb-4">
+                      <h3 calss="fw-bold">Access Level</h3>
+                      <select class="form-select fc-g">
+                        <option>-Choose access level-</option>
+                      </select>
+                      <hr class="mt-4 mb-4">
+                      <h3 calss="fw-bold mb-3">Custom Access</h3>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Lecture">
+                        <label class="form-check-label align-middle" for="Lecture">
+                          Lecture
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Coupon">
+                        <label class="form-check-label align-middle" for="Coupon">
+                          Coupon
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Message">
+                        <label class="form-check-label align-middle" for="Message">
+                          Message
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Setting">
+                        <label class="form-check-label align-middle" for="Setting">
+                          Setting
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id=" Task Menu">
+                        <label class="form-check-label align-middle" for=" Task Menu">
+                          Task Menu
+                        </label>
+                      </div>
+                      
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-white text-success border-success pe-4 ps-4" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-success pe-4 ps-4">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="material-icons me-26 poin">
+              search
+            </span>
+            <span class="material-icons  me-40 poin">
+              notifications_active
+              </span>
+          </div>
+        </nav>
+        
+        <main> 
+    <table class="table table-hover ms-32 mt-4 ">
+        <thead>
+          <tr>
+            <th scope="col">ID
+                <span class="material-icons text-success align-middle">
+                arrow_downward
+                </span>
+            </th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Verified</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="pt-3">#1</th>
+            <td class="pt-3" >Emir Wicks</td>
+            <td class="pt-3">emir.wicks@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3">
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#2</th>
+            <td class="pt-3">Zaina Goldsmith</td>
+            <td class="pt-3">zaina.goldsmith@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#3</th>
+            <td class="pt-3">Mahima Lopez</td>
+            <td class="pt-3">mahima.lopez@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#4</th>
+            <td class="pt-3">Pharrell Murray</td>
+            <td class="pt-3">pharrell.murray@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#5</th>
+            <td class="pt-3">Annika Mcbride</td>
+            <td class="pt-3">annika.mcbride@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#6</th>
+            <td class="pt-3">Fatimah Clark</td>
+            <td class="pt-3">fatimah.clark@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#7</th>
+            <td class="pt-3">Klaudia Rhodes</td>
+            <td class="pt-3">klaudia.rhodes@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#8</th>
+            <td class="pt-3">Tillie Lucero</td>
+            <td class="pt-3">tillie.lucero@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr class="">
+            <th scope="row" class="pt-3">#9</th>
+            <td class="pt-3">Sabrina Stephenson</td>
+            <td class="pt-3">sabrina.stephenson@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="pt-3">#10</th>
+            <td class="pt-3">Annie Smith</td>
+            <td class="pt-3">annie.smith@mail.com</td>
+            <td class="pt-3">Yes</td>
+            <td class="pt-3" >
+                <span class="material-icons poin pr-15 ">
+                visibility
+                </span>
+                <span class="material-icons poin">
+                    edit
+                </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</main>
+        <ul class="d-flex justify-content-end mt-5 me-40">
+          <li class="border border-success text-success rounded-start pt-1">
+            <a href="#">
+              <span class="material-icons">
+                navigate_next
+                </span>
+            </a>
+          </li>
+          <li class="border border-success pt-1 bg-success"><a href="#" class="p-2"><span class="text-light">1</span></a></li>
+          <li class="border border-success pt-1"><a href="#" class="p-2"><span>2</span></a></li>
+          <li class="border border-success pt-1"><a href="#" class="p-2"><span>3</span></a></li>
+          <li class="border border-success text-success  rounded-end pt-1">
+            <a href="#">
+              <span class="material-icons">
+                navigate_before
+                </span>
+            </a>
+          </li>
+        </ul>
+
+        
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
